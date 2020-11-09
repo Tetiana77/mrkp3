@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+.box {
+    width: 150px;
+    padding: 20px;
+    border: 5px solid blue;
+}
+table {
+    border: 2px solid black;
+    width: 100%;
+}
+td:not([class="item"]) {
+    /* background: gray; */
+}
+tr:nth-child(odd) {
+    background: yellow;
+}
+tr:nth-child(even) {
+    background: blue; 
+}
+tr:nth-child(3n+4) {
+    background: crimson;
+}
+tr:nth-child(even) td:nth-child(even):hover {
+    background: darkgreen;
+}
+tr:first-child {
+    background: purple;
+    color: white;
+    font-weight: 700;
+}
+tr:last-child {
+    background: purple;
+    color: yellow;
+    font-weight: 700;
+}
+td:nth-child(even) {
+    background: grey;
+}
+td:empty {
+    background: white;
+}
+.block {}
+    
+#opener {
+    display: none;
+}
+#opener:checked ~ .slide {
+    display: block;
+    
+}
+.slide {
+    display: none;
+}
+.item-block {
+    display: flex;
+    width: 500px;
+}
+.item_block img {
+    width: 200px;
+}
+.item_block p {
+    width: calc(100%-200%);
+}
+.item_block p:only-child {
+    width: 100%;
+}

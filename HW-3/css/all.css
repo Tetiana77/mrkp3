@@ -1,0 +1,47 @@
+blockquote {
+    margin: 0;
+}
+blockquote div {
+    background: lightblue;
+    font-size: 25px;
+    color: darkgreen;
+    border-radius: 10px;
+    padding: 15px;
+}
+blockquote footer {
+    font-size: 25px;
+    text-align: right;
+}
+[href^="https"] {
+    color: #f00;
+}
+[href="http://www.youtube.com/"] {
+    color: #ff8d00;
+}
+ul+p {
+    font-size: 26px;
+}
+a[title] {
+    border: 1px solid #067b09;
+}
+.text-box > h3 {
+    color: pink;
+}
+#greycol {
+    color: gray;
+}
+div + h3 {
+    color: black !important;
+}
+h3 + div {
+    color: red;
+}
+h3[title] {
+    color: blue !important;
+}
+h3[title] + p {
+    color: green;
+}
+.yellow {
+    color: yellow;
+}
